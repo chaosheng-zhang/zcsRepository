@@ -23,8 +23,9 @@ import com.alibaba.dubbo.common.json.JSONObject;
  * @author: zhangcs
  * @Description: RSA签名，公钥私钥
  * @date: 2018年1月11日 上午10:43:48
+ * 123
  */
-public class RSACoder {
+public class RSACoder{
 	
 	public static final String KEY_ALGORITHM = "RSA";
     public static final String SIGNATURE_ALGORITHM = "MD5withRSA";
@@ -244,7 +245,7 @@ public class RSACoder {
         System.out.println("-----------------------------------");
         System.out.println("privateKey="+privateKey);
         System.out.println("-----------------------------------");
-        byte[] encryptByPrivateKey = encryptByPrivateKey("123456".getBytes(),privateKey);
+        byte[] encryptByPrivateKey = encryptByPrivateKey("zhangcs".getBytes(),privateKey);
         byte[] encryptByPublicKey = encryptByPublicKey("123456",publicKey);
         System.out.println("encryptByPrivateKey="+new String(encryptByPrivateKey));
         System.out.println("-----------------------------------");
